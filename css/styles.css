@@ -1,0 +1,170 @@
+*{
+    font-family: great vibes;
+}
+.common-padding {
+    padding: 50px 0;
+}
+/* banner */
+.geen-courousel-slide{
+    height: 737px;
+}
+.green-img{
+    position: relative;
+}
+.green-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004a;
+}
+/* grid part css */
+.pic1 {
+    width: 100%;
+    height: 350px;
+    padding-top: 20px;
+}
+.pic2 {
+    padding-top: 20px;
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+}
+.pic3 {
+    width: 100%;
+    height: 350px;
+    padding-top: 20px;
+}
+/* testimonial part css */
+.importent h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(26, 26, 171);
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.importent li {
+    font-size: 18px;
+    color: rgb(8, 49, 8);
+}
+.importent ol {
+    padding-top: 25px;
+}
+/* go green part css */
+.go-green-img {
+    position: relative;
+}
+.go-green-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004a;
+}
+.go-green-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(26, 26, 171);
+    text-align: center;
+    text-decoration: underline;
+    font-family:  sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.accordion p {
+    font-size: 15px;
+    color: rgb(8, 49, 8);
+}
+.accordion li {
+    list-style: none;
+    background-color: #ffffff1f;
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.167),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.32);
+    padding: 20px;
+}
+.accordion li label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color:rgb(8, 49, 8);
+    font-weight: 600;
+    cursor: pointer;
+}
+.accordion li label::before {
+    content: '+';
+    font-weight: 600;font-size: 18px;
+    color:rgb(8, 49, 8);
+    padding: 10px;
+}
+.accordion input[type='radio']{
+    display: none;
+}
+.accordion .content {
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type='radio']:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+/* card part css */
+.go-green-card {
+    box-shadow: 0 6px 20px -2px #ffffff12;
+}
+.go-green-card-img {
+    position: relative;
+}
+.go-green-card-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004a;
+}
+.go-green-card p {
+    font-size: 15px;
+    color: rgb(8, 49, 8);
+}
+.go-green-card-body {
+    padding: 15px;
+    font-size: 15px;
+    color: rgb(8, 49, 8);
+}
+/* footer part css */
+.footer {
+    background-color: rgb(30, 30, 30);
+    height: 100px;
+}
+#footer-text {
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+/* responsive */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .geen-courousel-slide {
+        height: 250px;
+    }
+    .testimonial-img {
+        padding-bottom: 20px;
+    }
+    #footer-text {
+        font-size: 20px;
+    }
+}
