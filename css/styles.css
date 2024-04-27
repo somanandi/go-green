@@ -5,13 +5,13 @@
     padding: 50px 0;
 }
 /* banner */
-.geen-courousel-slide{
-    height: 737px;
+.geen-carousel-slide {
+    height: 600px;
 }
-.green-img{
+.green-carousel-item{
     position: relative;
 }
-.green-img::after {
+.green-carousel-item::after {
     content: "";
     position: absolute;
     top: 0;
@@ -19,6 +19,17 @@
     width: 100%;
     height: 100%;
     background-color: #0000004a;
+}
+.green-carousel-text h1 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
 }
 /* grid part css */
 .pic1 {
@@ -42,7 +53,7 @@
     font-size: 25px;
     font-weight: bold;
     color: rgb(26, 26, 171);
-    text-align: center;
+    padding-left: 20px;
     text-decoration: underline;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -53,6 +64,21 @@
 }
 .importent ol {
     padding-top: 25px;
+}
+/* text part css */
+.text-part h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(26, 26, 171);
+    text-align: center;
+    text-decoration: underline;
+    font-family:  sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+.text-part p {
+    font-size: 15px;
+    color: rgb(8, 49, 8);
 }
 /* go green part css */
 .go-green-img {
@@ -68,7 +94,6 @@
     background-color: #0000004a;
 }
 .go-green-title {
-    text-align: center;
     font-size: 25px;
     font-weight: bold;
     color: rgb(26, 26, 171);
@@ -118,6 +143,7 @@
     max-height: 400px;
     padding: 10px 10px 20px;
 }
+
 /* card part css */
 .go-green-card {
     box-shadow: 0 6px 20px -2px #ffffff12;
@@ -146,7 +172,7 @@
 /* footer part css */
 .footer {
     background-color: rgb(30, 30, 30);
-    height: 100px;
+    height: 169px;
     position: relative;
 }
 .footer::after {
@@ -160,20 +186,15 @@
     z-index: -1;
 }
 #footer-text {
-    position: relative;
     color: #fff;
-    font-size: 32px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    z-index: 5;
+    height: 100%;
+    position: absolute;
 }
-.footer span a {
-   color: #fff;
-    font-size: 30px;
-    font-family: sans-serif;
-}
+
 /* responsive */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .importent h2 {
@@ -188,10 +209,11 @@
     .testimonial-img {
         padding-bottom: 20px;
     }
+    .go-green-slider img{
+      padding: 10px 0;
+    }
     #footer-text {
-        font-size: 15px;
+        font-size: 12px;
     }
-    .footer span a {
-        font-size: 14px;
-    }
+    
 }
