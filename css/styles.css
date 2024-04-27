@@ -8,19 +8,19 @@
 .geen-carousel-slide {
     height: 600px;
 }
-.green-carousel-item{
+.green-img{
     position: relative;
 }
-.green-carousel-item::after {
+.green-img::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0000004a;
+    background-color: #00000054;
 }
-.green-carousel-text h1 {
+#green-carousel-text-id {
     position: absolute;
     width: 100%;
     display: flex;
@@ -28,22 +28,12 @@
     height: 100%;
     justify-content: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #f0eeee;
     font-weight: bold;
+    font-size: 40px;
 }
 /* grid part css */
 .pic1 {
-    width: 100%;
-    height: 350px;
-    padding-top: 20px;
-}
-.pic2 {
-    padding-top: 20px;
-    width: 100%;
-    height: 300px;
-    padding-top: 20px;
-}
-.pic3 {
     width: 100%;
     height: 350px;
     padding-top: 20px;
@@ -144,7 +134,7 @@
     padding: 10px 10px 20px;
 }
 
-/* card part css */
+/* go green card part css */
 .go-green-card {
     box-shadow: 0 6px 20px -2px #ffffff12;
 }
@@ -171,9 +161,13 @@
 }
 /* footer part css */
 .footer {
-    background-color: rgb(30, 30, 30);
+    background-image: url('../images/footer.jpg');
+    align-items: center;
     height: 169px;
     position: relative;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .footer::after {
     content: "";
@@ -186,7 +180,7 @@
     z-index: -1;
 }
 #footer-text {
-    color: #fff;
+    color: #f0eeee;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -197,11 +191,23 @@
 
 /* responsive */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .green-carousel {
+        height: 230px;
+    }
+    .geen-carousel-slide {
+        height: 230px;
+    }
+    #green-carousel-text-id {
+        font-size: 12px;
+    }
     .importent h2 {
         font-size: 20px;
     }
     .go-green-title {
         font-size: 20px;
+    }
+    .go-green-slider-carousel {
+        padding: 0px;
     }
     .geen-courousel-slide {
         height: 250px;
@@ -211,6 +217,9 @@
     }
     .go-green-slider img{
       padding: 10px 0;
+    }
+    .go-green-card-padding {
+        padding: 0px;
     }
     #footer-text {
         font-size: 12px;
